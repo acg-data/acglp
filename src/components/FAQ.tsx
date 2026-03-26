@@ -1,23 +1,19 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Plus, X, ThumbsUp, ThumbsDown } from 'lucide-react';
+import { reveal } from '../utils/motion';
 
 export function FAQ() {
   const [openIdx, setOpenIdx] = useState<number | null>(null);
   const [helpful, setHelpful] = useState<Record<number, 'yes' | 'no' | null>>({});
 
-  const reveal: any = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
-  };
-
   const faqs = [
-    { q: "How is this different from hiring a consultant?", a: "Most consultants advise from the outside. Aryo teaches you the exact playbook so you can execute internally — without ongoing fees. You learn to fish, not get fish handed to you once." },
-    { q: "Do I need to have a specific industry background?", a: "No. The framework works across industries. We focus on the mechanics of consolidation — sourcing, valuing, integrating — not industry-specific nuances. You'll apply it to your vertical." },
-    { q: "What if I'm just starting out with no acquisitions?", a: "The program is designed for all stages. Early-stage members learn to identify opportunities and build toward their first deal. Later-stage members optimize existing portfolios. The curriculum scales with you." },
-    { q: "How do I finance acquisitions without PE capital?", a: "We teach multiple financing strategies: SBA loans, seller notes, earnouts, revenue-based financing, and hybrid structures. Many rollups start with cash-flow positive deals before seeking outside capital." },
-    { q: "What's the time commitment?", a: "The core program is 8 months. Expect 4-6 hours per week for coursework and calls. Implementation work happens on your timeline. Lifetime alumni access means ongoing support after the cohort ends." },
-    { q: "Is this available for teams, not just individuals?", a: "Yes. We offer team pricing for leadership teams who want to execute together. Shared context accelerates execution. Contact us for team pricing and custom implementation timelines." },
+    { q: "How is this different from hiring a consultant or business broker?", a: "Consultants advise from the outside and leave when the retainer ends. Brokers find you one deal and move on. Aryo teaches you the complete playbook — so you can source, evaluate, negotiate, and integrate deals repeatedly. You build a permanent capability, not a one-time transaction. And you keep 100% of the equity." },
+    { q: "Do I need a specific industry background to do a rollup?", a: "No. The rollup framework is industry-agnostic. We teach the mechanics of consolidation — market mapping, deal sourcing, valuation, integration — and you apply it to your vertical. Program alumni have executed in healthcare, home services, SaaS, manufacturing, and professional services. The pattern works wherever fragmentation exists." },
+    { q: "What if I've never acquired a business before?", a: "The program is designed for first-time acquirers. We start from foundations — how to read financials, structure an LOI, run due diligence, negotiate seller financing. By module 4, you'll be evaluating live deals. By program end, most participants have at least one deal in pipeline or closed." },
+    { q: "How do I finance acquisitions without PE-level capital?", a: "We teach multiple financing strategies most business owners don't know exist: SBA 7(a) loans (up to $5M per deal), seller notes, earnouts, revenue-based financing, and hybrid structures. Many successful rollups start with a single SBA-backed deal before attracting outside capital. The program covers each approach in depth with real deal examples." },
+    { q: "What's the time commitment during the 8-month program?", a: "Plan for 4-6 hours per week for coursework and calls. Modules are pre-recorded so you can work through them on your schedule. Live coaching calls happen monthly and are recorded for replay. Implementation work — deal sourcing, due diligence, integration — happens on your own timeline and accelerates as you progress." },
+    { q: "Is this available for teams or partners, not just individuals?", a: "Yes. We offer team pricing for leadership teams and business partners who want to execute together. Shared context accelerates execution dramatically — we've seen teams close their first deal 40% faster than solo participants. Contact us for team pricing and custom onboarding." },
   ];
 
   return (
@@ -59,7 +55,7 @@ export function FAQ() {
                     <p className="pt-4 pb-4 text-[14.5px] text-ink-500 leading-relaxed pr-10">
                       {faq.a}
                     </p>
-                    <div className="flex items-center gap-4 pt-2 border-t border-ink-50">
+                    <div className="flex items-center gap-4 pt-2 border-t border-ink-100">
                       <span className="text-xs text-ink-300">Was this helpful?</span>
                       <div className="flex gap-2">
                         <button
