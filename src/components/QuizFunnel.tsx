@@ -10,12 +10,12 @@ const STORAGE_KEY = 'aryo-quiz-state';
 
 export function QuizFunnel({ onComplete }: QuizFunnelProps) {
   const questions = [
-    { q: "What's your primary goal?", options: ["Learn the rollup strategy from scratch", "Execute my first acquisition", "Scale an existing portfolio company", "Build a multi-company holdco"] },
-    { q: "What industry are you in or targeting?", options: ["Healthcare / Medical practices", "Home Services / Trades", "Professional Services / Agencies", "SaaS / Technology", "Manufacturing / Industrial", "Other / Exploring"] },
-    { q: "What's your current annual revenue?", options: ["Pre-revenue / Planning stage", "$0 – $500K", "$500K – $2M", "$2M – $10M", "$10M+"] },
-    { q: "Do you have access to acquisition capital?", options: ["Yes — cash or committed financing", "Working on it — building relationships", "Need guidance on financing options", "Not yet — need to learn the basics first"] },
-    { q: "What's your timeline to first deal?", options: ["Ready now — within 3 months", "6–12 months", "1–2 years", "Just exploring the strategy"] },
-    { q: "How did you hear about Aryo?", options: ["Referral from someone I trust", "LinkedIn or social media", "Google search", "Podcast or media appearance", "Industry event or conference"] },
+    { q: "What's your primary goal?", options: ["Scale my existing business faster", "Acquire competitors in my market", "Build a multi-location platform", "Learn the methodology from scratch"] },
+    { q: "What industry are you in?", options: ["Healthcare / Medical / Dental", "Home Services / Trades / HVAC", "Professional Services / Agencies", "Distribution / Logistics", "Manufacturing / Industrial", "Other / Exploring"] },
+    { q: "What's your current annual revenue?", options: ["$5M – $10M", "$10M – $25M", "$25M – $50M", "$50M – $100M", "$100M+"] },
+    { q: "Do you have access to acquisition capital?", options: ["Yes—cash on hand or committed financing", "Working on it—building lender relationships", "Need guidance on deal structuring", "Exploring options—want to learn first"] },
+    { q: "What's your timeline?", options: ["Ready to execute immediately", "Within 6 months", "Within 12 months", "Strategic planning phase"] },
+    { q: "How did you hear about Aryo?", options: ["Referral from another business owner", "LinkedIn / Social media", "Google search", "Podcast / Interview", "Industry event"] },
   ];
 
   const [step, setStep] = useState(0);
@@ -62,8 +62,8 @@ export function QuizFunnel({ onComplete }: QuizFunnelProps) {
 
   const progressPercent = completed ? 100 : (step / questions.length) * 100;
 
-  // Disqualification check: pre-revenue + no capital + just exploring = suggest free resources
-  const isEarlyStage = answers[2] === "Pre-revenue / Planning stage" && answers[3] === "Not yet — need to learn the basics first" && answers[4] === "Just exploring the strategy";
+  // Disqualification check: under $5M revenue = suggest free resources
+  const isTooSmall = answers[2] && (answers[2].includes('$0') || answers[2].includes('Pre-revenue'));
 
   return (
     <section className="py-24 px-6 md:px-14 bg-ink-900" id="quiz">
@@ -98,13 +98,13 @@ export function QuizFunnel({ onComplete }: QuizFunnelProps) {
               exit={{ opacity: 0, y: -20 }}
               className="bg-white p-8 text-center"
             >
-              {isEarlyStage ? (
+              {isTooSmall ? (
                 <>
                   <div className="font-serif text-2xl font-bold text-ink-900 mb-4">
-                    You're early — and that's <em className="italic text-aryo">smart.</em>
+                    Aryo is designed for established businesses.
                   </div>
                   <p className="text-ink-500 mb-6">
-                    The strategy call is best suited for owners with existing revenue or access to capital. In the meantime, we have free resources that'll help you build the foundation.
+                    The program methodology works best for owner-operators doing $5M+ with the operational foundation to execute acquisitions. We have free resources to help you build toward that foundation.
                   </p>
                   <button className="font-sans text-xs font-bold tracking-widest uppercase text-white bg-aryo px-8 py-3.5 hover:bg-aryo-dark transition-all">
                     Access Free Resources &rarr;

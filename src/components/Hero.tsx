@@ -49,8 +49,7 @@ export function Hero() {
         transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
         className="font-serif text-4xl md:text-6xl lg:text-[5rem] leading-[1.05] tracking-tight text-ink-900 font-semibold text-balance mx-auto"
       >
-        The playbook that built<br/>
-        <em className="italic text-aryo">billion-dollar holdcos.</em>
+        The growth playbook private equity<br/>uses to build <em className="italic text-aryo">dominant platforms.</em>
       </motion.h1>
 
       <motion.p 
@@ -59,7 +58,7 @@ export function Hero() {
         transition={{ duration: 0.6, delay: 0.2 }}
         className="text-lg text-ink-500 mt-6 max-w-xl mx-auto leading-relaxed"
       >
-        Learn to consolidate fragmented industries and build enterprise value — the exact methodology used by the world's most successful private equity firms. Without selling.
+        Aryo gives owner-operators ($5M-$100M) the same methodology PE firms use to consolidate fragmented industries—without giving up equity. Learn to acquire competitors, unlock operational synergies, and build a market-dominating platform you control.
       </motion.p>
 
       <motion.div 
@@ -70,21 +69,21 @@ export function Hero() {
       >
         <div className="flex-1 p-5 md:p-6 text-center border-b md:border-b-0 md:border-r border-ink-100">
           <div className="font-serif text-3xl md:text-4xl font-bold text-ink-900">
-            <em className="italic text-aryo">3–5x</em>
+            <em className="italic text-aryo">2-3x</em>
           </div>
-          <div className="text-[9px] font-bold tracking-[0.1em] uppercase text-ink-300 mt-1">Target Equity Multiple</div>
+          <div className="text-[9px] font-bold tracking-[0.1em] uppercase text-ink-300 mt-1">Faster Growth Rate</div>
         </div>
         <div className="flex-1 p-5 md:p-6 text-center border-b md:border-b-0 md:border-r border-ink-100">
           <div className="font-serif text-3xl md:text-4xl font-bold text-ink-900">
             <em className="italic text-aryo">0%</em>
           </div>
-          <div className="text-[9px] font-bold tracking-[0.1em] uppercase text-ink-300 mt-1">Equity Given Up</div>
+          <div className="text-[9px] font-bold tracking-[0.1em] uppercase text-ink-300 mt-1">Keep Full Control</div>
         </div>
         <div className="flex-1 p-5 md:p-6 text-center">
           <div className="font-serif text-3xl md:text-4xl font-bold text-ink-900">
             <em className="italic text-aryo">Proven</em>
           </div>
-          <div className="text-[9px] font-bold tracking-[0.1em] uppercase text-ink-300 mt-1">PE Framework</div>
+          <div className="text-[9px] font-bold tracking-[0.1em] uppercase text-ink-300 mt-1">Methodology You Execute</div>
         </div>
       </motion.div>
 

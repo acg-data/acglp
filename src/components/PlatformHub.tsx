@@ -34,13 +34,13 @@ export function PlatformHub({ onResourceClick }: PlatformHubProps) {
         initial="hidden" whileInView="visible" viewport={{ once: true }} variants={reveal}
         className="font-serif text-4xl md:text-5xl lg:text-[3.5rem] leading-[1.05] tracking-tight text-ink-900 font-semibold mb-16"
       >
-        Aryo is not just a course.<br/>It is <em className="italic text-aryo font-medium">the operating system</em><br/>for rollup execution.
+        Aryo gives you the complete growth methodology—<br/>from market analysis through integration playbooks. <em className="italic text-aryo font-medium">Everything PE firms use, adapted for owner-operators.</em>
       </motion.h2>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={reveal}>
           <p className="text-[17px] text-ink-500 leading-relaxed mb-10">
-            Most programs give you frameworks and leave you to figure out execution. We give you the complete toolkit — playbooks, templates, models, and live support — so you can move from learning to closing deals in months, not years.
+            Most programs teach you frameworks and leave execution to you. We give you the complete execution toolkit—playbooks, templates, models, and live support—so you move from learning to acquiring competitors in months, not years. For owner-operators doing $5M-$100M who want to scale without diluting.
           </p>
           <div className="flex flex-col border-t border-ink-100">
             {features.map((f, i) => (

@@ -2,11 +2,11 @@ import { motion } from 'framer-motion';
 
 export function ProofTicker() {
   const items = [
-    { n: "$500M+", l: "Enterprise Value Built" },
-    { n: "3.2x", l: "Avg. Equity Multiple" },
-    { n: "40+", l: "Companies Rolled Up" },
-    { n: "12", l: "Industries Deployed" },
-    { n: "<18mo", l: "Avg. Deal Timeline" },
+    { n: "$5B+", l: "Combined Revenue of Program Alumni" },
+    { n: "2.3x", l: "Avg. Growth Rate" },
+    { n: "150+", l: "Companies Acquired by Alumni" },
+    { n: "8", l: "Industries Dominated" },
+    { n: "18mo", l: "Avg. Time to First Acquisition" },
   ];
 
   const tickerItems = [...items, ...items];
@@ -40,7 +40,7 @@ export function ProofTicker() {
       <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" aria-hidden="true"></div>
       
       <div className="text-center pb-2 text-[8px] text-ink-300 px-4">
-        *Based on program alumni outcomes. Individual results vary. Past performance does not guarantee future results.
+        *Results from program alumni. Individual outcomes depend on market conditions, execution, and deal quality.
       </div>
     </div>
   );

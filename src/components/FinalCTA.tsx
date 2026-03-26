@@ -22,11 +22,11 @@ export function FinalCTA({ onQuizClick }: FinalCTAProps) {
           </div>
           
           <h2 className="font-serif text-4xl md:text-6xl lg:text-[4.5rem] leading-[1.05] tracking-tight text-white font-semibold text-balance mx-auto">
-            Learn to build enterprise<br/>value like <em className="italic text-aryo">the pros.</em>
+            Scale your business using<br/>the same playbook that built <em className="italic text-aryo">billion-dollar platforms.</em>
           </h2>
           
           <p className="text-[17px] text-white/50 mt-6 leading-relaxed max-w-2xl mx-auto">
-            Private equity firms have used the rollup playbook for decades to build billion-dollar enterprises. Now you can learn the same methodology — without giving up equity or paying PE-level fees.
+            Private equity firms have used this methodology for decades to consolidate industries and build dominant platforms. Now you can learn it—without giving up equity, without a PE partner telling you what to do, and without the $500M fund requirement.
           </p>
         </motion.div>
 

@@ -4,10 +4,10 @@ import { reveal } from '../utils/motion';
 
 export function Returns() {
   const differentiators = [
-    { title: "No equity dilution — you own 100%", text: "Unlike PE firms that take 50-80% of your business, the Aryo playbook keeps you in full control. You learn the strategy. You execute. You keep the upside." },
-    { title: "Works across fragmented industries", text: "Healthcare, home services, SaaS, manufacturing, professional services — the rollup thesis adapts to any market with 50+ small competitors and no dominant player." },
-    { title: "Full visibility into every deal", text: "We teach you to evaluate deals like a PE associate — cap tables, EBITDA multiples, integration risk, and synergy maps. No black box." },
-    { title: "Proven framework, not theory", text: "Every module is drawn from deals that actually closed. Real LOIs, real DD checklists, real integration playbooks. Not MBA case studies — execution blueprints." },
+    { title: "You keep full control of your platform", text: "Unlike PE firms that take 50-80% of your business and replace you, the Aryo playbook keeps you in the driver's seat. You learn the methodology. You execute. You stay CEO. You capture the upside." },
+    { title: "Works in any market with fragmentation", text: "Healthcare, home services, manufacturing, distribution, professional services—if your industry has 50+ competitors doing $1M-$50M, the consolidation playbook applies. We've seen it work across 8+ sectors." },
+    { title: "Complete operational + financial transparency", text: "We teach you to evaluate deals, run due diligence, and structure acquisitions like a PE associate—cap tables, EBITDA multiples, integration risk, synergy maps. No black box. You see everything." },
+    { title: "Battle-tested in real transactions", text: "Every module comes from deals that actually closed. Real LOIs, real diligence checklists, real integration playbooks—not MBA theory. This is execution methodology from operators who've done it." },
   ];
 
   return (
@@ -19,7 +19,7 @@ export function Returns() {
             className="flex items-center justify-center gap-3 text-[10px] font-bold tracking-[0.2em] uppercase text-aryo mb-4"
           >
             <div className="w-5 h-px bg-aryo/70" aria-hidden="true"></div>
-            What You Build
+            Platform Outcomes
             <div className="w-5 h-px bg-aryo/70" aria-hidden="true"></div>
           </motion.div>
           
@@ -28,22 +28,22 @@ export function Returns() {
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={reveal}
             className="font-serif text-4xl md:text-5xl lg:text-[3.5rem] leading-[1.05] tracking-tight text-ink-900 font-semibold"
           >
-            The outcome profile.<br/><em className="italic text-aryo font-medium">Plainly stated.</em>
+            Scale 2-3x faster<br/>than organic growth.<em className="italic text-aryo font-medium"></em>
           </motion.h2>
 
           <motion.div 
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={reveal}
             className="mt-16 flex flex-col items-center"
           >
-            <div className="font-serif text-[6rem] md:text-[8.5rem] font-bold leading-[0.85] tracking-tight text-ink-900" aria-label="3 to 5x target equity multiple">
-              <em className="italic text-aryo">3</em>&ndash;<em className="italic text-aryo">5</em>x
+            <div className="font-serif text-[6rem] md:text-[8.5rem] font-bold leading-[0.85] tracking-tight text-ink-900" aria-label="2 to 3 times faster growth">
+              <em className="italic text-aryo">2</em>&ndash;<em className="italic text-aryo">3</em>x
             </div>
-            <div className="text-sm font-bold tracking-[0.14em] uppercase text-ink-300 mt-6">Target Equity Multiple Over Hold Period*</div>
+            <div className="text-sm font-bold tracking-[0.14em] uppercase text-ink-300 mt-6">Faster Than Organic Growth*</div>
             <p className="text-base text-ink-500 mt-4 max-w-xl leading-relaxed">
-              By acquiring at 3-4x EBITDA and building a platform valued at 8-12x, you create a multiple arbitrage that generates outsized returns — without organic growth alone.
+              By acquiring competitors at 3-4x EBITDA and integrating operations, you create a platform valued at 8-12x. Revenue compounds. Margins expand. Market share dominates.
             </p>
             <p className="text-[10px] text-ink-300 mt-4 max-w-xl">
-              *Targets only. Not guarantees. Based on typical PE rollup outcomes in fragmented industries. Individual results depend on execution, market conditions, and deal quality.
+              *Based on typical outcomes in fragmented industries. Individual results depend on market conditions, execution quality, and deal flow.
             </p>
           </motion.div>
         </div>
@@ -54,29 +54,29 @@ export function Returns() {
         >
           <div className="p-8 md:p-10 text-center border-b md:border-b-0 md:border-r border-ink-100 hover:bg-aryo-50 transition-colors">
             <div className="font-serif text-5xl font-bold text-ink-900 leading-none">
-              +<em className="italic text-aryo">30%</em>
+              <em className="italic text-aryo">18–36</em>
             </div>
-            <div className="text-[11px] font-bold tracking-[0.1em] uppercase text-ink-300 mt-3">Target IRR*</div>
+            <div className="text-[11px] font-bold tracking-[0.1em] uppercase text-ink-300 mt-3">Months to Platform Scale*</div>
             <p className="text-[13px] text-ink-500 leading-relaxed mt-4">
-              Annualized returns driven by multiple arbitrage, operational synergies, and revenue growth across the platform.
+              Most owner-operators reach critical mass within 18-36 months. First acquisition often closes within 90 days of completing the program methodology.
             </p>
           </div>
           <div className="p-8 md:p-10 text-center border-b md:border-b-0 md:border-r border-ink-100 hover:bg-aryo-50 transition-colors">
             <div className="font-serif text-5xl font-bold text-ink-900 leading-none">
-              <em className="italic text-aryo">18–36</em>
+              <em className="italic text-aryo">Revenue</em>
             </div>
-            <div className="text-[11px] font-bold tracking-[0.1em] uppercase text-ink-300 mt-3">Month Timeline</div>
+            <div className="text-[11px] font-bold tracking-[0.1em] uppercase text-ink-300 mt-3">Compounding Growth*</div>
             <p className="text-[13px] text-ink-500 leading-relaxed mt-4">
-              Most rollups reach critical mass within 18-36 months. First acquisition often closes within 90 days of program completion.
+              Each acquisition adds revenue immediately. Integration unlocks cost synergies (15-25% savings). Platform scale drives pricing power.
             </p>
           </div>
           <div className="p-8 md:p-10 text-center hover:bg-aryo-50 transition-colors">
             <div className="font-serif text-5xl font-bold text-ink-900 leading-none">
-              <em className="italic text-aryo">M&A</em>
+              <em className="italic text-aryo">Market</em>
             </div>
-            <div className="text-[11px] font-bold tracking-[0.1em] uppercase text-ink-300 mt-3">Exit Pathway</div>
+            <div className="text-[11px] font-bold tracking-[0.1em] uppercase text-ink-300 mt-3">Dominating Position</div>
             <p className="text-[13px] text-ink-500 leading-relaxed mt-4">
-              Strategic acquirer, PE buyout, or continued hold and cash flow. You choose the exit that fits your goals.
+              Become the largest player in your region or vertical. Control distribution. Set prices. Attract talent. Build something nobody can replicate.
             </p>
           </div>
         </motion.div>

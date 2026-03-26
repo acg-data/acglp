@@ -4,10 +4,10 @@ import { reveal } from '../utils/motion';
 
 export function HowItWorks() {
   const steps = [
-    { tag: "Step 01", icon: Search, title: "Identify the Fragmentation", text: "We teach you to spot industries where 50+ small players chase the same customers — creating massive consolidation opportunity. You'll learn to map market structure, identify platform candidates, and score industries by rollup potential.", cycle: "-> Industry analysis" },
-    { tag: "Step 02", icon: Target, title: "Build the Acquisition Engine", text: "Learn proprietary deal sourcing, valuation frameworks, and financing strategies that make targets come to you. SBA loans, seller notes, earnouts — you'll master every lever.", cycle: "-> Deal machine" },
-    { tag: "Step 03", icon: TrendingUp, title: "Optimize & Integrate", text: "Master the operational playbooks that unlock synergies, improve margins, and build defensible competitive advantages. Back-office consolidation, brand unification, shared services — the compounding starts here.", cycle: "-> Value creation" },
-    { tag: "Step 04", icon: Rocket, title: "Exit for Multiple", text: "Understand when and how to harvest value — strategic buyer, PE recapitalization, or IPO pathway. You'll learn to position your platform for maximum exit multiple.", cycle: "-> Realize returns" },
+    { tag: "Step 01", icon: Search, title: "Map Your Market", text: "Learn to identify fragmentation in your industry—where 50+ small players compete for the same customers. We teach you to map market structure, identify acquisition targets, and score opportunities by consolidation potential.", cycle: "-> Market analysis" },
+    { tag: "Step 02", icon: Target, title: "Build Deal Flow", text: "Master deal sourcing, valuation, and financing without PE capital. SBA loans, seller notes, earnouts—you'll learn how to structure acquisitions that make sellers want to work with you.", cycle: "-> Acquisition engine" },
+    { tag: "Step 03", icon: TrendingUp, title: "Integrate & Optimize", text: "Execute the integration playbooks that unlock operational synergies. Consolidate back-office functions, unify brands, standardize processes—turn multiple companies into one efficient platform.", cycle: "-> Platform building" },
+    { tag: "Step 04", icon: Rocket, title: "Dominate & Decide", text: "Grow to market dominance where you control pricing and attract the best talent. When you're ready—strategic sale, PE recap, or keep cash-flowing—you choose the exit that fits your goals.", cycle: "-> Market leadership" },
   ];
 
   return (
@@ -24,7 +24,7 @@ export function HowItWorks() {
           initial="hidden" whileInView="visible" viewport={{ once: true }} variants={reveal}
           className="font-serif text-4xl md:text-5xl lg:text-[3.5rem] leading-[1.05] tracking-tight text-ink-900 font-semibold"
         >
-          How Aryo teaches you<br/>to <em className="italic text-aryo font-medium">roll up an industry.</em>
+          How owner-operators use Aryo<br/>to <em className="italic text-aryo font-medium">build dominant platforms.</em>
         </motion.h2>
       </div>
 

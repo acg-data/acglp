@@ -15,16 +15,16 @@ export function PullQuote() {
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
             <blockquote className="font-serif text-2xl md:text-3xl lg:text-4xl leading-[1.38] font-medium text-white/80 text-balance">
-              "I spent $400K on 'strategic consultants' who gave me slide decks. Aryo gave me a <em className="italic text-aryo">blueprint I actually executed</em> — we acquired 6 companies in 14 months and built a platform worth more than the sum of its parts."
+              "I was stuck at $5M for years trying to grow organically. Aryo showed me there was a faster path—we acquired 3 competitors in 18 months and hit $18M. <em className="italic text-aryo">Same team, 3x the platform.</em> And I own 100% of it."
             </blockquote>
             
             <div className="mt-8 flex items-center gap-4">
               <div className="w-12 h-12 bg-white/5 border border-white/10 flex items-center justify-center font-serif text-lg font-bold text-aryo shrink-0" aria-hidden="true">
-                MC
+                DP
               </div>
               <div>
-                <div className="text-sm font-bold text-white">Marcus Chen</div>
-                <div className="text-[11.5px] text-white/40 mt-1">Founder, ServicePro Holdings &middot; Program Alumni 2024</div>
+                <div className="text-sm font-bold text-white">David P.</div>
+                <div className="text-[11.5px] text-white/40 mt-1">Founder, ServicePro Holdings &middot; $4M → $18M in 18 months</div>
               </div>
             </div>
 
